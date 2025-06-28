@@ -39,7 +39,7 @@ const AgeChart: React.FC<AgeChartProps> = ({ data, onAgeClick }) => {
       return (
         <div className="bg-white p-2 border border-gray-200 rounded shadow-md">
           <p className="font-medium">{payload[0].payload.displayName}</p>
-          <p className="text-gray-700">{`${payload[0].value} respondents (${((payload[0].value / data.reduce((a, b) => a + b.value, 0)) * 100).toFixed(1)}%)`}</p>
+<p className="text-gray-700">{`${payload[0].value} คน (${((payload[0].value / data.reduce((a, b) => a + b.value, 0)) * 100).toFixed(1)}%)`}</p>
         </div>
       );
     }
@@ -74,8 +74,8 @@ const AgeChart: React.FC<AgeChartProps> = ({ data, onAgeClick }) => {
           <Legend />
         </PieChart>
       </ResponsiveContainer>
-      <div className="text-center text-sm text-gray-500">
-        Click on an age group to filter the data
+<div className="text-center text-sm text-gray-500">
+        คลิกที่กลุ่มอายุเพื่อกรองข้อมูล
       </div>
     </div>
   );

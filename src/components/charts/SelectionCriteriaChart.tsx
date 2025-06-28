@@ -37,7 +37,7 @@ const SelectionCriteriaChart: React.FC<SelectionCriteriaChartProps> = ({ data })
       return (
         <div className="bg-white p-2 border border-gray-200 rounded shadow-md">
           <p className="font-medium">{payload[0].payload.displayName}</p>
-          <p className="text-gray-700">{`${payload[0].value} respondents`}</p>
+<p className="text-gray-700">{`${payload[0].value} คน`}</p>
         </div>
       );
     }
@@ -45,7 +45,7 @@ const SelectionCriteriaChart: React.FC<SelectionCriteriaChartProps> = ({ data })
   };
 
   return (
-    <div style={{ height: 280, padding: 8 }}>
+    <div style={{ height: 360, width: '100%', padding: 8, overflow: 'visible' }}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={formattedData}

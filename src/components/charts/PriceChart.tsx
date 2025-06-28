@@ -14,7 +14,7 @@ const PriceChart: React.FC<PriceChartProps> = ({ data }) => {
       return (
         <div className="bg-white p-2 border border-gray-200 rounded shadow-md">
           <p className="font-medium">฿{payload[0].payload.name}</p>
-          <p className="text-gray-700">{`${payload[0].value} respondents`}</p>
+<p className="text-gray-700">{`${payload[0].value} คน`}</p>
         </div>
       );
     }

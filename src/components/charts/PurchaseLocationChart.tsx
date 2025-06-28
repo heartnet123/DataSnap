@@ -38,7 +38,7 @@ const PurchaseLocationChart: React.FC<PurchaseLocationChartProps> = ({ data }) =
       return (
         <div className="bg-white p-2 border border-gray-200 rounded shadow-md">
           <p className="font-medium">{payload[0].payload.displayName}</p>
-          <p className="text-gray-700">{`${payload[0].value} respondents (${((payload[0].value / data.reduce((a, b) => a + b.value, 0)) * 100).toFixed(1)}%)`}</p>
+<p className="text-gray-700">{`${payload[0].value} คน (${((payload[0].value / data.reduce((a, b) => a + b.value, 0)) * 100).toFixed(1)}%)`}</p>
         </div>
       );
     }
