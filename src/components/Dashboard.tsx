@@ -70,7 +70,7 @@ const Dashboard: React.FC = () => {
             <h1 className="text-3xl font-bold text-gray-800 mb-2">FruitInsight Dashboard</h1>
             <p className="text-gray-600 text-lg">แดชบอร์ดวิเคราะห์พฤติกรรมการบริโภคผลไม้ในประเทศไทย</p>
           </div>
-          <img src="https://cdn.pixabay.com/photo/2017/01/20/15/06/fruit-1995056_1280.png" alt="Fruit" className="w-24 h-24 object-contain rounded-full border-4 border-white shadow-md bg-white" />
+          <img src="https://img.freepik.com/free-psd/3d-rendering-kawaii-summer-icon_23-2150528405.jpg?semt=ais_hybrid&w=740" alt="Fruit" className="w-24 h-24 object-contain rounded-full border-4 border-white shadow-md bg-white" />
         </section>
         {filter && (
           <div className="mb-6">
