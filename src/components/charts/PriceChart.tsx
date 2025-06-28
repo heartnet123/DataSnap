@@ -9,7 +9,7 @@ interface PriceChartProps {
 }
 
 const PriceChart: React.FC<PriceChartProps> = ({ data }) => {
-  const customTooltip = ({ active, payload, label }: any) => {
+  const customTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-white p-2 border border-gray-200 rounded shadow-md">

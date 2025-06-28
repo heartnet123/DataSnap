@@ -66,7 +66,7 @@ const AgeChart: React.FC<AgeChartProps> = ({ data, onAgeClick }) => {
             onClick={handleClick}
             cursor="pointer"
           >
-            {formattedData.map((entry, index) => (
+            {formattedData.map((_entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>

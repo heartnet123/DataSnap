@@ -43,7 +43,7 @@ const EatenWithChart: React.FC<EatenWithChartProps> = ({ data }) => {
             dataKey="value"
             nameKey="displayName"
           >
-            {formattedData.map((entry, index) => (
+            {formattedData.map((_entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
