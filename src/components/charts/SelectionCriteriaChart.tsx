@@ -32,7 +32,7 @@ const SelectionCriteriaChart: React.FC<SelectionCriteriaChartProps> = ({ data })
     displayName: translateCriteria(item.name)
   }));
 
-  const customTooltip = ({ active, payload, label }: any) => {
+  const customTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-white p-2 border border-gray-200 rounded shadow-md">
@@ -66,7 +66,7 @@ const SelectionCriteriaChart: React.FC<SelectionCriteriaChartProps> = ({ data })
             radius={[0, 6, 6, 0]}
             barSize={22}
           >
-            {formattedData.map((entry, index) => (
+            {formattedData.map((_, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Bar>

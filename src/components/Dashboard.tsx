@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { parseData, getAgeCounts, getFruitCounts, getLocationCounts, getCriteriaCounts, getPriceCounts, getEatenWithCounts, getTimeCounts, getShopLocationCounts, translateAge, translateFruit, translateLocation, translateCriteria, translateEatenWith, translateTime, translateShopLocation, fruitColors, rawData } from '../utils/dataParser';
+import { parseData, getAgeCounts, getFruitCounts, getLocationCounts, getCriteriaCounts, getPriceCounts, getEatenWithCounts, getTimeCounts, getShopLocationCounts, translateAge, rawData } from '../utils/dataParser';
 import Header from './Header';
 import AgeChart from './charts/AgeChart';
 import FruitPreferenceChart from './charts/FruitPreferenceChart';
