@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface HeaderProps {
   respondentCount: number;
 }
 
 const Header: React.FC<HeaderProps> = ({ respondentCount }) => {
+  const [currentDate, setCurrentDate] = useState<string>('');
+
+  useEffect(() => {
+    const updateDate = () => {
+      const now = new Date();
+      const options: Intl.DateTimeFormatOptions = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      };
+      setCurrentDate(now.toLocaleDateString('en-US', options));
+    };
+
+    updateDate();
+    const interval = setInterval(updateDate, 60000); // Update every minute
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center">
@@ -29,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ respondentCount }) => {
               <circle cx="12" cy="12" r="10"></circle>
               <polyline points="12 6 12 12 16 14"></polyline>
             </svg>
-            <span>June 27, 2025</span>
+            <span>{currentDate}</span>
           </div>
           
           <div className="bg-pink-100 text-pink-800 rounded-full px-3 py-1 text-sm font-medium flex items-center">
