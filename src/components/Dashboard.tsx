@@ -61,7 +61,7 @@ const Dashboard: React.FC = () => {
     : shopLocationCounts;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-orange-50 ">
       <Header respondentCount={data.length} />
       
       <main className="container mx-auto px-4 py-8">
