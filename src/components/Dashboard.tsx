@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-orange-50">
-      <Header />
+      <Header respondentCount={data.length} />
       
       <main className="container mx-auto px-4 py-8">
         <section className="mb-8 bg-gradient-to-r from-pink-200 to-orange-200 rounded-xl shadow p-6 flex flex-col md:flex-row items-center justify-between gap-4">

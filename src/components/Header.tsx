@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  respondentCount: number;
+}
+
+const Header: React.FC<HeaderProps> = ({ respondentCount }) => {
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center">
@@ -33,7 +37,7 @@ const Header: React.FC = () => {
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
-            <span>60 Respondents</span>
+            <span>{respondentCount} Respondents</span>
           </div>
         </div>
       </div>
